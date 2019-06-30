@@ -1,11 +1,15 @@
 This makes an Android-like toast.
-Based on code sample from here: https://stackoverflow.com/a/32817660/4215359
 
-Build (in case you can't just `make`):
-javac toast.java
-jar -c -e Toast -f toast.jar *.class
+Based on code sample from [here](https://stackoverflow.com/a/32817660/4215359)
 
-Run:
-toast.jar \<text> \<font size> \<display time in seconds (float)> \<x (int)> \<y (int)>
+#### Building (in case you can't just `make`):
 
-Enjoy :)
+`javac toast.java`
+
+`jar -c -e Toast -f toast.jar *.class`
+
+#### Running:
+
+`toast.jar <text> <font size> <display time in seconds (float)> <x (int)> <y (int)>`
+
+##### Enjoy :)
