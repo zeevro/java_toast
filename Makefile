@@ -1,14 +1,11 @@
 JAVAC=javac
 JAR=jar
-JARFLAGS=-c -e Toast
 
-all: toast.jar
+toast.jar: Toast.class
+	$(JAR) -c -e Toast -f $@ Toast*.class
 
 Toast.class: toast.java
 	$(JAVAC) $^
 
-toast.jar: Toast.class
-	$(JAR) $(JARFLAGS) -f $@ Toast*.class
-
 clean:
-	rm -f *.jar *.class
+	$(RM) *.jar *.class
